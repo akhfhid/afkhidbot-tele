@@ -1,4 +1,4 @@
-# afkhif-telebot
+# afkhid-telebot
 
 A modern Telegram bot built with Telegraf v4 (ESM), a modular plugin system, and a lightweight JSON database (LowDB). It includes hot‑reload for plugins and a tiny HTTP status endpoint.
 
