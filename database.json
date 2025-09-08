@@ -1,0 +1,208 @@
+{
+  "users": {
+    "1126433907": {
+      "saldo": 0,
+      "exp": 170,
+      "level": 0,
+      "limit": 200,
+      "registered": false,
+      "premium": false,
+      "banned": false,
+      "premiumTime": 0,
+      "command": 0,
+      "commandTotal": 0,
+      "lastCmd": 0,
+      "chat": 13,
+      "chatTotal": 13,
+      "lastseen": 1757074273155,
+      "lastReset": "2025-09-08"
+    },
+    "1224841922": {
+      "saldo": 0,
+      "exp": 34,
+      "level": 0,
+      "limit": 100,
+      "registered": false,
+      "premium": false,
+      "banned": false,
+      "premiumTime": 0,
+      "command": 0,
+      "commandTotal": 0,
+      "lastCmd": 0,
+      "chat": 3,
+      "chatTotal": 3,
+      "lastseen": 1757307044896,
+      "lastReset": "2025-09-08"
+    },
+    "5434027308": {
+      "saldo": 0,
+      "exp": 884,
+      "level": 0,
+      "limit": 200,
+      "registered": false,
+      "premium": false,
+      "banned": false,
+      "premiumTime": 0,
+      "command": 0,
+      "commandTotal": 0,
+      "lastCmd": 0,
+      "chat": 63,
+      "chatTotal": 63,
+      "lastseen": 1757307054053,
+      "lastReset": "2025-09-08"
+    },
+    "7052919795": {
+      "saldo": 0,
+      "exp": 34,
+      "level": 0,
+      "limit": 200,
+      "registered": false,
+      "premium": false,
+      "banned": false,
+      "premiumTime": 0,
+      "command": 0,
+      "commandTotal": 0,
+      "lastCmd": 0,
+      "chat": 3,
+      "chatTotal": 3,
+      "lastseen": 1757007622669,
+      "lastReset": "2025-09-08"
+    },
+    "7712373995": {
+      "saldo": 0,
+      "exp": 68,
+      "level": 0,
+      "limit": 200,
+      "registered": false,
+      "premium": false,
+      "banned": false,
+      "premiumTime": 0,
+      "command": 0,
+      "commandTotal": 0,
+      "lastCmd": 0,
+      "chat": 5,
+      "chatTotal": 5,
+      "lastseen": 1757075508405,
+      "lastReset": "2025-09-08"
+    },
+    "6091475452": {
+      "saldo": 0,
+      "exp": 187,
+      "level": 0,
+      "limit": 200,
+      "registered": false,
+      "premium": false,
+      "banned": false,
+      "premiumTime": 0,
+      "command": 0,
+      "commandTotal": 0,
+      "lastCmd": 0,
+      "chat": 13,
+      "chatTotal": 13,
+      "lastseen": 1757076096080,
+      "lastReset": "2025-09-08"
+    }
+  },
+  "chats": {
+    "1126433907": {
+      "isBanned": false,
+      "welcome": true,
+      "mute": false,
+      "sWelcome": "Selamat datang @user di grup @subject!",
+      "sBye": "Selamat tinggal @user!",
+      "autoDL": false
+    },
+    "1224841922": {
+      "isBanned": false,
+      "welcome": true,
+      "mute": false,
+      "sWelcome": "Selamat datang @user di grup @subject!",
+      "sBye": "Selamat tinggal @user!",
+      "autoDL": false
+    },
+    "5434027308": {
+      "isBanned": false,
+      "welcome": true,
+      "mute": false,
+      "sWelcome": "Selamat datang @user di grup @subject!",
+      "sBye": "Selamat tinggal @user!",
+      "autoDL": false
+    },
+    "7052919795": {
+      "isBanned": false,
+      "welcome": true,
+      "mute": false,
+      "sWelcome": "Selamat datang @user di grup @subject!",
+      "sBye": "Selamat tinggal @user!",
+      "autoDL": false
+    },
+    "7712373995": {
+      "isBanned": false,
+      "welcome": true,
+      "mute": false,
+      "sWelcome": "Selamat datang @user di grup @subject!",
+      "sBye": "Selamat tinggal @user!",
+      "autoDL": false
+    },
+    "6091475452": {
+      "isBanned": false,
+      "welcome": true,
+      "mute": false,
+      "sWelcome": "Selamat datang @user di grup @subject!",
+      "sBye": "Selamat tinggal @user!",
+      "autoDL": false
+    }
+  },
+  "stats": {
+    "menu.js": {
+      "total": 64,
+      "success": 50,
+      "last": 1757307054053,
+      "lastSuccess": 1757307054053
+    },
+    "downloader-douyin-tiktok.js": {
+      "total": 3,
+      "success": 3,
+      "last": 1757075756832,
+      "lastSuccess": 1757075756832
+    },
+    "tools-say.js": {
+      "total": 2,
+      "success": 2,
+      "last": 1757073586929,
+      "lastSuccess": 1757073586929
+    },
+    "ai-geminiedit.js": {
+      "total": 4,
+      "success": 4,
+      "last": 1757074273155,
+      "lastSuccess": 1757074273155
+    },
+    "ai-remini.js": {
+      "total": 4,
+      "success": 4,
+      "last": 1757105526716,
+      "lastSuccess": 1757105526716
+    },
+    "ai-toanime.js": {
+      "total": 3,
+      "success": 3,
+      "last": 1757074635334,
+      "lastSuccess": 1757074635334
+    },
+    "info-bot.js": {
+      "total": 5,
+      "success": 5,
+      "last": 1757075259089,
+      "lastSuccess": 1757075259089
+    },
+    "ai-negrosiasi.js": {
+      "total": 4,
+      "success": 4,
+      "last": 1757076096080,
+      "lastSuccess": 1757076096080
+    }
+  },
+  "msgs": {},
+  "sticker": {}
+}
