@@ -1,4 +1,4 @@
-# NaoESM-Telebot
+# afkhif-telebot
 
 A modern Telegram bot built with Telegraf v4 (ESM), a modular plugin system, and a lightweight JSON database (LowDB). It includes hot‑reload for plugins and a tiny HTTP status endpoint.
 
@@ -20,8 +20,8 @@ A modern Telegram bot built with Telegraf v4 (ESM), a modular plugin system, and
 ### Quick start
 1) Clone the repository
 ```powershell
-git clone https://github.com/ShirokamiRyzen/NaoESM-Telebot.git
-cd NaoESM-Telebot
+git clone https://github.com/akhfhid/afkhidbot-tele.git
+cd afkhidbot
 ```
 
 2) Install dependencies
@@ -114,7 +114,7 @@ Explore existing examples in `plugins/`.
 
 ## Attribution
 
-This project is adapted and refactored for ESM and Telegraf v4 by ShirokamiRyzen.
+This project is adapted and refactored for ESM and Telegraf v4 by Akhfhid.
 
 Original author and repository (base work):
 - ERLANRAHMAT — https://github.com/ERLANRAHMAT/telebot-wa
@@ -123,5 +123,5 @@ The codebase also references “Original Script by BETABOTZ” in logs. We exten
 
 ## License
 
-ISC License © ShirokamiRyzen
+ISC License © Akhfhid.
 
