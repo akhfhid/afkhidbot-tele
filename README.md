@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # afkhidbot-tele
 
 ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
@@ -307,4 +307,3 @@ The codebase also references “Original Script by BETABOTZ” in logs. We exten
 
 ISC License © Akhfhid.
 
->>>>>>> 0adeebb884d3a210190d89a1422cd43a7fa10b50
