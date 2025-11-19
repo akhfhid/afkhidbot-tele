@@ -12,7 +12,6 @@ const __dirname = path.dirname(__filename);
 const ports = global.ports
 let availablePortIndex = 0;
 let version = 'unknown';
-
 function checkPort(port) {
   return new Promise((resolve, reject) => {
     const app = express();

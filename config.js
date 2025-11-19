@@ -6,7 +6,7 @@ global.botname = "afkhidbot"
 global.prefix = ["/", ".", "#", "!"]
 global.wib = 7
 global.wait = "Please wait..."
-global.wm = "© Afkhid Network"
+global.wm = "© Afkhid"
 // Message
 global.message = {
   rowner: "This command can only be used by the _*OWNER!*_",

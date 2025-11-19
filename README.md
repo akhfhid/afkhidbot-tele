@@ -1,127 +1,180 @@
-# afkhif-telebot
+# afkhidbot-tele
 
-A modern Telegram bot built with Telegraf v4 (ESM), a modular plugin system, and a lightweight JSON database (LowDB). It includes hot‑reload for plugins and a tiny HTTP status endpoint.
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![Telegraf](https://img.shields.io/badge/Telegraf-29B6F6?style=for-the-badge&logo=telegram&logoColor=white)
 
-## Highlights
+**afkhidbot-tele** is a lightweight, feature-rich Telegram bot built using Node.js and the Telegraf framework. It comes packed with various utilities, AI integrations, media downloaders, and fun features to enhance your Telegram experience.
 
-- Node.js ESM + Telegraf v4
-- Modular plugins in `plugins/` with hot-reload
-- JSON database via bundled LowDB (no external DB)
-- Role/permission helpers (owner, admin, premium)
-- Daily command limit system (auto reset)
-- Small HTTP status server with auto port selection
+## 🚀 Features
 
-## Getting Started
+### 🤖 Artificial Intelligence
+- **ChatGPT**: Chat with an advanced AI assistant.
+- **Gemini**: Integration with Google's Gemini AI.
+- **Flux & Text2Image**: Generate images from text descriptions.
+- **Remini**: Enhance and clarify images.
+- **Colorize**: Add color to black and white photos.
 
-### Requirements
-- Node.js v20+
-- A Telegram Bot Token from [@BotFather](https://t.me/BotFather)
+### 📥 Media Downloaders
+- **YouTube**: Download MP3 and MP4 from YouTube.
+- **TikTok**: Download TikTok videos without watermarks.
+- **Instagram**: Download posts, reels, and stories.
+- **Spotify**: Download music from Spotify.
+- **Pinterest**: Download images and videos from Pinterest.
+- **Twitter/X**: Download media from Twitter.
+- **Facebook**: Download videos from Facebook.
+- **SoundCloud**: Download tracks from SoundCloud.
+- **Threads**: Download content from Threads.
 
-### Quick start
-1) Clone the repository
-```powershell
-git clone https://github.com/akhfhid/afkhidbot-tele.git
-cd afkhidbot
-```
+### 🕵️ Stalking Tools
+- **GitHub Stalker**: Get user profile information from GitHub.
+- **Instagram Stalker**: View Instagram user details.
+- **TikTok Stalker**: Analyze TikTok profiles.
+- **Twitter Stalker**: Get Twitter user info.
 
-2) Install dependencies
-```powershell
-npm install
-```
+### 🛠 Utilities & Tools
+- **Anime Finder**: Search for anime information.
+- **Gempa Info**: Get the latest earthquake info (BMKG).
+- **Grow Garden**: Fun gardening mini-game/info.
+- **Ping**: Check bot latency.
+- **Uploader**: Upload files to the cloud.
+- **Say**: Text-to-speech or message repeater.
 
-3) Configure your bot
-- Copy `config.example.js` to `config.js`
-- Edit `config.js` and set at least:
-  - `global.token` with your BotFather token
-  - `global.ownername`, `global.ownerid` (comma/space separated or array)
+### 🎮 XP & RPG System
+- **Registration**: User registration system.
+- **Profile**: View user stats and profile.
+- **Limit**: Daily limit system for bot usage.
+- **Unregister**: Delete user data.
 
-4) Run the bot
-```powershell
-npm start
-```
+## 🛠 Installation
 
-On start you’ll see OS/RAM info, the HTTP status port, and the plugin summary. The status endpoint responds on `/` with a small JSON.
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/akhfhid/afkhidbot-tele.git
+    cd afkhidbot-tele
+    ```
 
-## Configuration
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
 
-All settings live in `config.js` (see `config.example.js` for defaults).
+3.  **Configuration**
+    - Rename `config.example.js` to `config.js`.
+    - Open `config.js` and update the required fields (Bot Token, API Keys, etc.).
 
-- token: Telegram bot token string
-- ownername: Your display name
-- ownerid: Single ID or a list of owner IDs (string/array)
-- premid: Premium user IDs (optional)
-- botname: Public bot name used in messages
-- prefix: Array of prefixes, e.g. `['/','.', '#','!']`
-- wib: Time offset (hours) for some date/time helpers
-- message: Common error/guard messages
-- ports: List of ports the tiny HTTP server will try in order
-- limit: Default daily command limit per user
-- APIs / APIKeys: External API base URLs and keys, e.g. `ryzumi: https://api.ryzumi.vip`
+    ```javascript
+    // config.js
+    module.exports = {
+        botToken: 'YOUR_TELEGRAM_BOT_TOKEN',
+        ownerId: 'YOUR_TELEGRAM_USER_ID',
+        // ... other configurations
+    };
+    ```
 
-Security tips
-- Don’t commit secrets. Prefer editing `config.js` locally copied from `config.example.js`.
-- Rotate tokens/keys if they ever leak.
+4.  **Start the bot**
+    ```bash
+    npm start
+    ```
 
-## Database
+## ⚙️ Configuration
 
-- File: `database.json` (auto-created on first run)
-- Backend: LowDB JSON file (bundled under `lib/lowdb/`)
-- Auto-save interval: ~15s
-- Daily limit reset: handled internally for each user
+The bot is highly configurable via `config.js`. Make sure to provide valid API keys for the services you intend to use (e.g., OpenAI, Gemini, etc.).
 
-Back up `database.json` regularly if you care about the data.
+## 🤝 Contributing
 
-## Plugin System
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-Plugins live in `plugins/` and are hot‑reloaded on change. A plugin can be a function export and may attach metadata used by the core handler.
+# afkhidbot-tele
 
-Minimal plugin example
-```js
-// plugins/hello.js
-export default async function (m, { conn }) {
-  await m.reply('Hello World!')
-}
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![Telegraf](https://img.shields.io/badge/Telegraf-29B6F6?style=for-the-badge&logo=telegram&logoColor=white)
 
-// Optional metadata used by the handler
-export const command = /^(hello|hi)$/i
-export const tags = ['main'] // for your own grouping/menus
-```
+**afkhidbot-tele** is a lightweight, feature-rich Telegram bot built using Node.js and the Telegraf framework. It comes packed with various utilities, AI integrations, media downloaders, and fun features to enhance your Telegram experience.
 
-Supported fields (attach as named exports or properties on the default function):
-- command: string | RegExp | (string | RegExp)[] — matcher for the command (required to trigger)
-- customPrefix: string | RegExp | (string | RegExp)[] — override global prefixes
-- before(m, extras): optional pre-hook; return false to skip
-- after(m, extras): optional post-hook
-- exp: number — XP awarded (default 17)
-- limit: boolean | number — consume N limits (true = 1)
-- rowner, owner, premium, group, private, admin: booleans to guard command
+## 🚀 Features
 
-Handler parameters
-- m: normalized message object with helpers like `m.reply(text)`
-- extras: `{ conn, args, text, command, usedPrefix, isOwner, isPrems, isAdmin, isBotAdmin, participants }`
+### 🤖 Artificial Intelligence
+- **ChatGPT**: Chat with an advanced AI assistant.
+- **Gemini**: Integration with Google's Gemini AI.
+- **Flux & Text2Image**: Generate images from text descriptions.
+- **Remini**: Enhance and clarify images.
+- **Colorize**: Add color to black and white photos.
 
-Explore existing examples in `plugins/`.
+### 📥 Media Downloaders
+- **YouTube**: Download MP3 and MP4 from YouTube.
+- **TikTok**: Download TikTok videos without watermarks.
+- **Instagram**: Download posts, reels, and stories.
+- **Spotify**: Download music from Spotify.
+- **Pinterest**: Download images and videos from Pinterest.
+- **Twitter/X**: Download media from Twitter.
+- **Facebook**: Download videos from Facebook.
+- **SoundCloud**: Download tracks from SoundCloud.
+- **Threads**: Download content from Threads.
 
-## HTTP Status Endpoint
+### 🕵️ Stalking Tools
+- **GitHub Stalker**: Get user profile information from GitHub.
+- **Instagram Stalker**: View Instagram user details.
+- **TikTok Stalker**: Analyze TikTok profiles.
+- **Twitter Stalker**: Get Twitter user info.
 
-`index.js` starts a tiny Express server and auto-picks the first open port from `global.ports`. Hitting `/` returns a small JSON to verify the bot is alive.
+### 🛠 Utilities & Tools
+- **Anime Finder**: Search for anime information.
+- **Gempa Info**: Get the latest earthquake info (BMKG).
+- **Grow Garden**: Fun gardening mini-game/info.
+- **Ping**: Check bot latency.
+- **Uploader**: Upload files to the cloud.
+- **Say**: Text-to-speech or message repeater.
 
-## Troubleshooting
+### 🎮 XP & RPG System
+- **Registration**: User registration system.
+- **Profile**: View user stats and profile.
+- **Limit**: Daily limit system for bot usage.
+- **Unregister**: Delete user data.
 
-- “Telegraf library is not installed”: run `npm install` again.
-- Stuck on token error: ensure `global.token` in `config.js` is set and valid.
-- Node version: must be 20+. Check with `node -v`.
+## 🛠 Installation
 
-## Attribution
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/akhfhid/afkhidbot-tele.git
+    cd afkhidbot-tele
+    ```
 
-This project is adapted and refactored for ESM and Telegraf v4 by Akhfhid.
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
 
-Original author and repository (base work):
-- ERLANRAHMAT — https://github.com/ERLANRAHMAT/telebot-wa
+3.  **Configuration**
+    - Rename `config.example.js` to `config.js`.
+    - Open `config.js` and update the required fields (Bot Token, API Keys, etc.).
 
-The codebase also references “Original Script by BETABOTZ” in logs. We extend thanks to the original authors and contributors.
+    ```javascript
+    // config.js
+    module.exports = {
+        botToken: 'YOUR_TELEGRAM_BOT_TOKEN',
+        ownerId: 'YOUR_TELEGRAM_USER_ID',
+        // ... other configurations
+    };
+    ```
 
-## License
+4.  **Start the bot**
+    ```bash
+    npm start
+    ```
 
-ISC License © Akhfhid.
+## ⚙️ Configuration
 
+The bot is highly configurable via `config.js`. Make sure to provide valid API keys for the services you intend to use (e.g., OpenAI, Gemini, etc.).
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is licensed under the ISC License.
+
+## 👤 Author
+
+**Affan Khulafa Hidayah**
+- 🌐 Website: [akhfhid.my.id](https://akhfhid.my.id)
